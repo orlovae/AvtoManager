@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Manager Car</string>
+
+    <string name="car_brand">CAR BRAND</string>
+    <string name="car_model">CAR MODEL</string>
+    <string name="next">NEXT</string>
+    <string name="enter_speedometr">TO ENTER THE SPEEDOMETER READING</string>
+    <string name="manual_input">MANUALLY</string>
+    <string name="foto_input">PHOTOGRAPH</string>
+    <string name="enter_data">ENTER THE DATE OF THE LAST INSPECTION</string>
+    <string name="interval_km">ENTER THE INTERVAL IN KILOMETR</string>
+    <string name="interval_mount">CHOOSE THE INTERVAL IN MONTHS</string>
+    <string name="kilometr">KM</string>
+    <string name="recall">RECALL CHECKUP FOR</string>
+    <string name="repeat">REPEAT</string>
+    <string name="every">EVERY</string>
+    <string name="month">MONTH</string>
+    <string name="day">DAY</string>
+    <string name="to_send">REMINDER TO SEND</string>
+    <string name="array_1">ENTER THE LIST OF CONTROLLED PARAMETERS</string>
+    <string name="array_2">TO ENTER A LIST OF INTERCHANGEABLE PARTS</string>
+    <string name="array_3">VIEW A LIST OF INTERCHANGEABLE PARTS</string>
+    <string name="array_4">EDIT A LIST OF INTERCHANGEABLE PARTS</string>
+    <string name="array_5">VIEW A LIST OF CONTROLLED PARAMETERS</string>
+    <string name="array_6">EDIT A LIST OF CONTROLLED PARAMETERS</string>
+    <string name="change_alert">TO CHANGE THE ALERT</string>
+    <string name="name_parts">NAME PART</string>
+    <string name="name_parameters">NAME PARAMETERS</string>
+    <string name="catalogue_number">CATALOGUE NUMBER</string>
+    <string name="replace">REPLACE</string>
+    <string name="control">CONTROL</string>
+    <string name="add">ADD</string>
+    <string name="complete">COMPLETE</string>
+    <string name="exist">EXIST.RU</string>
+    <string name="autodoc">AUTODOC.RU</string>
+    <string name="emex">EMEX.RU</string>
+    <string name="delete">DELETE</string>
+    <string name="edit">EDIT</string>
+    <string name="enter_configuration">TO ENTER THE INITIAL CONFIGURATION</string>
+    <string name="proir_inspection">prior to the technical inspection there were</string>
+    <string name="inspectoin_achievement">technical inspection upon achievement</string>
+    <string name="daedline_inspection">the deadline for technical inspection</string>
+    <string name="erorr1">complete initial configuration of the program</string>
+    <string name="field_valid_1">Field</string>
+    <string name="field_valid_2">not filled. Please fill it out.</string>
+    <string name="warning_layout_enter_3">Please choose the interval in mount.</string>
+    <string name="warning_layout_enter_5">Please fill Part and Parameter.</string>
+    <string name="part">Part</string>
+    <string name="parameter">Parameter</string>
+    <string name="with">with </string>
+    <string name="warning_my_application_part">already exists. Enter the correct number.</string>
+    <string name="warning_my_application_parameter">already exists. Enter the correct Name.</string>
+    <string name="page1">PAGE 1 OF 5</string>
+    <string name="page2">PAGE 2 OF 5</string>
+    <string name="page3">PAGE 3 OF 5</string>
+    <string name="page4">PAGE 4 OF 5</string>
+    <string name="page5">PAGE 5 OF 5</string>
+    <string name="hour">8</string>
+    <string name="minute">0</string>
+
+    <string-array name="mount">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+
+    <string-array name="the_number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="the_number_day">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="to_send">
+        <item>SMS</item>
+        <item>EMAIL</item>
+        <item>ALERT</item>
+    </string-array>
+
+
+</resources>
