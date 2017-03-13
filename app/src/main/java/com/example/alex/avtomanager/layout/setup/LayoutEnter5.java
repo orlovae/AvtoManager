@@ -1,13 +1,20 @@
-package com.example.alex.avtomanager;
+package com.example.alex.avtomanager.layout.setup;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.alex.avtomanager.MainActivity;
+import com.example.alex.avtomanager.MyApplication;
+import com.example.alex.avtomanager.Parameter;
+import com.example.alex.avtomanager.Part;
+import com.example.alex.avtomanager.R;
+import com.example.alex.avtomanager.layout.LayoutParameterEdit;
+import com.example.alex.avtomanager.layout.LayoutPartEdit;
 
 import java.util.ArrayList;
 

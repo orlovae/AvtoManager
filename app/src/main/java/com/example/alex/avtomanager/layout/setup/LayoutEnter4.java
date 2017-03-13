@@ -1,4 +1,4 @@
-package com.example.alex.avtomanager;
+package com.example.alex.avtomanager.layout.setup;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.example.alex.avtomanager.MyApplication;
+import com.example.alex.avtomanager.R;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -49,15 +53,10 @@ public class LayoutEnter4 extends AppCompatActivity implements AdapterView.OnIte
 
     private void initView(){
         editTextEnterToKm = (EditText) findViewById(R.id.enter_to_km);
-
         textViewDateRecall = (TextView) findViewById(R.id.date_recall);
-
         textViewTimeRecall = (TextView) findViewById(R.id.time_recall);
-
         textViewSetRepeat = (TextView) findViewById(R.id.set_repeat);
-
         spinnerEnterToSend = (Spinner)findViewById(R.id.enter_to_send);
-
         buttonNext = (Button)findViewById(R.id.next);
     }
 

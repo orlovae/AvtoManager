@@ -10,6 +10,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.alex.avtomanager.layout.setup.LayoutEnter1;
+import com.example.alex.avtomanager.layout.LayoutParameterEdit;
+import com.example.alex.avtomanager.layout.LayoutParameterView;
+import com.example.alex.avtomanager.layout.LayoutPartEdit;
+import com.example.alex.avtomanager.layout.LayoutPartView;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -18,7 +24,6 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.GregorianCalendar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,9 +59,9 @@ public class MainActivity extends AppCompatActivity {
         textViewRemain2 = (TextView)findViewById(R.id.remain_2);
         setTextViewRemain2();
         textViewRemain3 = (TextView)findViewById(R.id.remain_3);
-        setTextViewRemain3();
+//        setTextViewRemain3();
         textViewRemain4 = (TextView)findViewById(R.id.remain_4);
-        setTextViewRemain4();
+//        setTextViewRemain4();
 
         editTextManually = (EditText)findViewById(R.id.manual_input_layout_enter);
         buttonAdd = (Button)findViewById(R.id.manual_input_layout_enter2);
@@ -100,30 +105,30 @@ public class MainActivity extends AppCompatActivity {
         else  textViewRemain2.setText(tmp2 + " " + tmp1 + " " + tmp3 + ".");
     }
 
-    private void setTextViewRemain3(){
-        Calendar variableNextInspection = MyApplication.getInstance().proirInspectionTime();
-        if (variableNextInspection != null){
-            int monthNextInspection = variableNextInspection.MONTH;
-            int daynextInspectoin = variableNextInspection.DAY_OF_MONTH;
-            String tmp2 = getString(R.string.proir_inspection);
-            String tmp3 = getString(R.string.month);
-            String tmp4 = getString(R.string.day);
-            textViewRemain3.setText(tmp2 + " " + monthNextInspection + " " + tmp3 + " " +
-                daynextInspectoin + " " + tmp4 + ".");
-        }
-        else textViewRemain3.setText(R.string.erorr1);
-    }
+//    private void setTextViewRemain3(){
+//        Calendar variableNextInspection = MyApplication.getInstance().proirInspectionTime();
+//        if (variableNextInspection != null){
+//            int monthNextInspection = variableNextInspection.MONTH;
+//            int daynextInspectoin = variableNextInspection.DAY_OF_MONTH;
+//            String tmp2 = getString(R.string.proir_inspection);
+//            String tmp3 = getString(R.string.month);
+//            String tmp4 = getString(R.string.day);
+//            textViewRemain3.setText(tmp2 + " " + monthNextInspection + " " + tmp3 + " " +
+//                daynextInspectoin + " " + tmp4 + ".");
+//        }
+//        else textViewRemain3.setText(R.string.erorr1);
+//    }
 
-    private void setTextViewRemain4(){
-        Calendar variableNextInspection = MyApplication.getInstance().nextInspectionTime();
-        if (variableNextInspection != null) {
-            SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
-            String dateNextInspection = sdf.format(variableNextInspection.getTime());
-            String tmp = getString(R.string.daedline_inspection);
-            textViewRemain4.setText(tmp + " - " + dateNextInspection);
-        }
-        else textViewRemain4.setText(R.string.erorr1);
-    }
+//    private void setTextViewRemain4(){
+//        Calendar variableNextInspection = MyApplication.getInstance().nextInspectionTime();
+//        if (variableNextInspection != null) {
+//            SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+//            String dateNextInspection = sdf.format(variableNextInspection.getTime());
+//            String tmp = getString(R.string.daedline_inspection);
+//            textViewRemain4.setText(tmp + " - " + dateNextInspection);
+//        }
+//        else textViewRemain4.setText(R.string.erorr1);
+//    }
 
     public void onClick(View view) { //Обработка нажатий кнопок
         switch (view.getId()) {
@@ -142,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
                 startLayoutGo(LayoutPartEdit.class);
                 break;
             case R.id.view_parameters:
-                startLayoutGo(LayuotParameterView.class);
+                startLayoutGo(LayoutParameterView.class);
                 break;
             case R.id.edit_parameters:
                 startLayoutGo(LayoutParameterEdit.class);

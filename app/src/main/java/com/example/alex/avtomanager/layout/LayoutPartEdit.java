@@ -1,4 +1,4 @@
-package com.example.alex.avtomanager;
+package com.example.alex.avtomanager.layout;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,12 +11,15 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-/**
- * Created by alex on 22.09.16.
- */
-public class LayoutParameterEdit extends AppCompatActivity {
+import com.example.alex.avtomanager.MyApplication;
+import com.example.alex.avtomanager.R;
 
-    private EditText editTextNameParameter;
+/**
+ * Created by alex on 21.09.16.
+ */
+public class LayoutPartEdit extends AppCompatActivity {
+
+    private EditText editTextNamePart, editTextCatalogueNumber;
     private RadioGroup radioGroup;
     private RadioButton radioButtonReplace, radioButtonControl;
     private Button buttonAdd, buttonComplete;
@@ -24,36 +27,34 @@ public class LayoutParameterEdit extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layuot_parameters_edit);
+        setContentView(R.layout.layuot_part_edit);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         // скрытие клавиатуры на activity
 
         initView();
 
-        setRadioGroupBehavior();
-
         setButtonAddBehavoir();
 
+        setRadioGroupBehavior();
 
     }
 
     private void initView(){
-        editTextNameParameter = (EditText)findViewById(R.id.name_parameter);
+        editTextNamePart = (EditText)findViewById(R.id.name_part);
+        editTextCatalogueNumber = (EditText)findViewById(R.id.catalogue_number);
         radioGroup = (RadioGroup) findViewById(R.id.select);
         radioButtonReplace = (RadioButton)findViewById(R.id.replace);
-        radioButtonControl = (RadioButton)findViewById(R.id.control);
+        radioButtonControl =(RadioButton)findViewById(R.id.control);
         buttonAdd = (Button)findViewById(R.id.add);
         buttonComplete = (Button)findViewById(R.id.complete);
-
     }
 
-    public void onClick(View view) { //Обработка нажатий кнопок
+    public void onClick(View view) { //Обработка нажатий complete
         switch (view.getId()) {
             case R.id.complete:
                 finish();
                 break;
         }
-
     }
 
     private String getEditText(EditText editText){//возврат String из Edittext
@@ -66,30 +67,32 @@ public class LayoutParameterEdit extends AppCompatActivity {
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                switch (i){
-                    case R.id.replace:
-                        MyApplication.getInstance().setVariableParameterTypeOfWork(true);
-                        break;
-                    case R.id.control:
-                        MyApplication.getInstance().setVariableParameterTypeOfWork(false);
-                        break;
-                }
+                  switch (i){
+                      case R.id.replace:
+                          MyApplication.getInstance().setVariablePartTypeOfWork(true);
+                          break;
+                      case R.id.control:
+                          MyApplication.getInstance().setVariablePartTypeOfWork(false);
+                          break;
+                  }
             }
         });
-
     }
 
     private void setButtonAddBehavoir(){
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String tmp1 = getEditText(editTextNameParameter);
-                fieldValidation(tmp1,editTextNameParameter);
+                String tmp1 = getEditText(editTextNamePart);
+                fieldValidation(tmp1,editTextNamePart);
+
+                String tmp2 = getEditText(editTextCatalogueNumber);
+                fieldValidation(tmp2, editTextCatalogueNumber);
 
                 checkedRadioGroup(radioButtonReplace);
-                boolean tmp2 = MyApplication.getInstance().isVariableParameterTypeOfWork();
+                boolean tmp3 = MyApplication.getInstance().isVariablePartTypeOfWork();
 
-                addParameter(tmp1, tmp2);
+                addPart(tmp1, tmp2, tmp3);
             }
         });
     }
@@ -110,21 +113,22 @@ public class LayoutParameterEdit extends AppCompatActivity {
 
     }
 
-    private void addParameter(String s1, boolean b){
-        //Добавление Parameter к ArrayList если поля заполнены
-        if (s1.length()!=0){
-            MyApplication.getInstance().setVariableParameter(s1);
-            MyApplication.getInstance().addArrayList(s1, b);}
+    private void addPart(String s1, String s2, boolean b){
+        //Добавление Part к ArrayList если поля заполнены
+        if (s1.length()!=0 && s2.length()!=0){
+            MyApplication.getInstance().setVariableNamePart(s1);
+            MyApplication.getInstance().setVariableCatalogueNumber(s2);
+            MyApplication.getInstance().addArrayList(s1, s2, b);}
     }
 
     private void checkedRadioGroup(RadioButton radioButton){
         //сетим значения если не нажаты радиобаттаны
         boolean b = radioButton.isChecked();
         if (b) {
-            MyApplication.getInstance().setVariableParameterTypeOfWork(true);
+            MyApplication.getInstance().setVariablePartTypeOfWork(true);
         }
         else {
-            MyApplication.getInstance().setVariableParameterTypeOfWork(false);
+            MyApplication.getInstance().setVariablePartTypeOfWork(false);
         }
     }
 }

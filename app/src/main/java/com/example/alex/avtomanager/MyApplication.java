@@ -106,18 +106,18 @@ public class MyApplication extends Application implements Closeable{
         }
     }
 
-    public Calendar proirInspectionTime(){
-        //расчёт сколько осталось до очередного ТО, месяцы и дни.
-        Calendar sVariableLastInspection; // = (Calendar) getVariableLastInspecton().clone();
-        if (sVariableLastInspection != null){
-            int sVariableIntervalMonth = getVariableIntervalMonth();
-            today = Calendar.getInstance();
-            sVariableLastInspection.add(Calendar.MONTH, sVariableIntervalMonth);
-            sVariableLastInspection.add(Calendar.MONTH, -today.MONTH);
-            return sVariableLastInspection;
-        }
-            else return sVariableLastInspection;
-    }
+//    public Calendar proirInspectionTime(){
+//        //расчёт сколько осталось до очередного ТО, месяцы и дни.
+//        Calendar sVariableLastInspection; // = (Calendar) getVariableLastInspecton().clone();
+//        if (sVariableLastInspection != null){
+//            int sVariableIntervalMonth = getVariableIntervalMonth();
+//            today = Calendar.getInstance();
+//            sVariableLastInspection.add(Calendar.MONTH, sVariableIntervalMonth);
+//            sVariableLastInspection.add(Calendar.MONTH, -today.MONTH);
+//            return sVariableLastInspection;
+//        }
+//            else return sVariableLastInspection;
+//    }
 
     public Calendar nextInspectionTime(){
         //расчёт крайнего срока ТО.

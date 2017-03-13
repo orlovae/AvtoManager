@@ -18,25 +18,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LayoutEnter1"
+        <activity android:name=".layout.setup.LayoutEnter1"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".LayoutEnter2"
+        <activity android:name=".layout.setup.LayoutEnter2"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".LayoutEnter3"
+        <activity android:name=".layout.setup.LayoutEnter3"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".LayoutEnter4"
+        <activity android:name=".layout.setup.LayoutEnter4"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".LayoutEnter5"
+        <activity android:name=".layout.setup.LayoutEnter5"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".LayoutPartEdit"
+        <activity android:name=".layout.LayoutPartEdit"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".LayoutPartEditEdit"
+        <activity android:name=".layout.LayoutPartEditEdit"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".LayoutPartView"
+        <activity android:name=".layout.LayoutPartView"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".LayoutParameterEdit"
+        <activity android:name=".layout.LayoutParameterEdit"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name=".LayuotParameterView"
+        <activity android:name=".layout.LayoutParameterView"
             android:configChanges="keyboardHidden|orientation|screenSize"/><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data

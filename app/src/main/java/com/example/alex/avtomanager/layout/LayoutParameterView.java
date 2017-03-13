@@ -1,4 +1,4 @@
-package com.example.alex.avtomanager;
+package com.example.alex.avtomanager.layout;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,12 +6,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.example.alex.avtomanager.MyApplication;
+import com.example.alex.avtomanager.Parameter;
+import com.example.alex.avtomanager.R;
+import com.example.alex.avtomanager.adapter.RecyclerViewAdapterParameter;
+
 import java.util.ArrayList;
 
 /**
  * Created by alex on 22.09.16.
  */
-public class LayuotParameterView extends AppCompatActivity {
+public class LayoutParameterView extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private ArrayList<Parameter> parameters = MyApplication.getInstance().getParameters();

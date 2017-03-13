@@ -1,4 +1,4 @@
-package com.example.alex.avtomanager;
+package com.example.alex.avtomanager.layout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,10 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.example.alex.avtomanager.MyApplication;
+import com.example.alex.avtomanager.Part;
+import com.example.alex.avtomanager.R;
 
 /**
  * Created by alex on 12.11.16.

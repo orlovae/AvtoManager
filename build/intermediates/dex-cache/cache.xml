@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="dedf38ef3e441045c97b99a3285eaf853ae5a2c4">
+        sha1="2aaae4ce99d38979a910bc3187a48cf82f6e16eb">
         <dex dex="/home/alex/Документы/программинг/Android/Lesson_05/AvtoManager/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_f9717f85d0381e53e1b77b0a1fc69ee89508cf0a.jar" />
     </item>
     <item

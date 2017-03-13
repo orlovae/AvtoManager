@@ -1,4 +1,4 @@
-package com.example.alex.avtomanager;
+package com.example.alex.avtomanager.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,6 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.alex.avtomanager.layout.LayoutPartEditEdit;
+import com.example.alex.avtomanager.Part;
+import com.example.alex.avtomanager.R;
+
 import java.util.ArrayList;
 
 

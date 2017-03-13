@@ -130,5 +130,4 @@ public class Part implements Parcelable {
             return new Part[size];
         }
     };
-
 }

@@ -1,11 +1,15 @@
-package com.example.alex.avtomanager;
+package com.example.alex.avtomanager.layout;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import com.example.alex.avtomanager.MyApplication;
+import com.example.alex.avtomanager.Part;
+import com.example.alex.avtomanager.R;
+import com.example.alex.avtomanager.adapter.RecyclerViewAdapterPart;
 
 import java.util.ArrayList;
 

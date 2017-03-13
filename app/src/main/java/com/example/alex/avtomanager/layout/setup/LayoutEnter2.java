@@ -1,4 +1,4 @@
-package com.example.alex.avtomanager;
+package com.example.alex.avtomanager.layout.setup;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -12,6 +12,10 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.alex.avtomanager.MyApplication;
+import com.example.alex.avtomanager.R;
+
 import java.util.Calendar;
 
 /**

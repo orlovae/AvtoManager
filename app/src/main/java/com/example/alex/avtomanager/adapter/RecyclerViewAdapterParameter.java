@@ -1,4 +1,4 @@
-package com.example.alex.avtomanager;
+package com.example.alex.avtomanager.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -6,6 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.alex.avtomanager.MyApplication;
+import com.example.alex.avtomanager.Parameter;
+import com.example.alex.avtomanager.R;
 
 import java.util.ArrayList;
 

@@ -42,7 +42,5 @@ public class Parameter extends Activity implements Serializable {
 
         if (b) return tmp1;
         return tmp2;
-
     }
-
 }
