@@ -59,7 +59,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/manual_input_layout_enter"
+                android:id="@+id/edit_text_manual_input"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -69,17 +69,15 @@
                 android:hint="@string/manual_input"/>
 
             <Button
-                android:id="@+id/manual_input_layout_enter2"
+                android:id="@+id/button_manual_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onClick"
                 android:text="@string/add"/>
 
             <Button
-                android:id="@+id/foto_input_layout_enter"
+                android:id="@+id/button_foto_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onClick"
                 android:text="@string/foto_input"/>
         </LinearLayout>
 
@@ -91,45 +89,39 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/view_parts"
+                android:id="@+id/button_view_parts"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onClick"
                 android:text="@string/array_3"/>
 
             <Button
-                android:id="@+id/edit_parts"
+                android:id="@+id/button_edit_parts"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onClick"
                 android:text="@string/array_4"/>
 
             <Button
-                android:id="@+id/view_parameters"
+                android:id="@+id/button_view_parameters"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onClick"
                 android:text="@string/array_5"/>
 
             <Button
-                android:id="@+id/edit_parameters"
+                android:id="@+id/button_edit_parameters"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onClick"
                 android:text="@string/array_6"/>
 
             <Button
-                android:id="@+id/change_alert"
+                android:id="@+id/button_change_alert"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onClick"
                 android:text="@string/change_alert"/>
 
             <Button
-                android:id="@+id/enter_configuration"
+                android:id="@+id/button_enter_configuration"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onClick"
                 android:text="@string/enter_configuration"/>
 
         </LinearLayout>

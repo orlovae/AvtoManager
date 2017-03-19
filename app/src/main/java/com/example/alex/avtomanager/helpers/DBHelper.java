@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 public class DBHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "DBNote";
+    private static final String DATABASE_NAME = "DB";
     private static final int DATABASE_VERSION = 1; // версия базы данных
 
 
