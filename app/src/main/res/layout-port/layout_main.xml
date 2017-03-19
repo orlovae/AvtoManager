@@ -3,139 +3,137 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/layout_1">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/remain_1"
-            android:text="@string/interval_km"
-            android:layout_gravity="center_horizontal"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/remain_2"
-            android:text="@string/interval_km"
-            android:layout_gravity="center_horizontal"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/remain_3"
-            android:text="@string/interval_km"
-            android:layout_gravity="center_horizontal"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/remain_4"
-            android:text="@string/interval_km"
-            android:layout_gravity="center_horizontal"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_horizontal_margin"
-            android:id="@+id/enter_speedometr"
-            android:text="@string/enter_speedometr"
-            android:layout_gravity="center_horizontal"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/layout_2"
-        android:layout_below="@+id/layout_1">
-
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/manual_input_layout_enter"
-            android:hint="@string/manual_input"
-            android:maxLines="1"
-            android:maxLength="10000000"
-            android:inputType="number"
-            android:layout_weight="1"/>
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/manual_input_layout_enter2"
-            android:text="@string/add"
-            android:onClick="onClick" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/foto_input_layout_enter"
-            android:text="@string/foto_input"
-            android:onClick="onClick" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/layout_3"
-        android:layout_below="@+id/layout_2">
-
-        <Button
+        <LinearLayout
+            android:id="@+id/layout_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/view_parts"
-            android:text="@string/array_3"
-            android:onClick="onClick" />
+            android:orientation="vertical">
 
-        <Button
+            <TextView
+                android:id="@+id/remain_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/interval_km"/>
+
+            <TextView
+                android:id="@+id/remain_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/interval_km"/>
+
+            <TextView
+                android:id="@+id/remain_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/interval_km"/>
+
+            <TextView
+                android:id="@+id/remain_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/interval_km"/>
+
+            <TextView
+                android:id="@+id/enter_speedometr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/enter_speedometr"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edit_parts"
-            android:text="@string/array_4"
-            android:onClick="onClick" />
+            android:layout_below="@+id/layout_1"
+            android:orientation="horizontal">
 
-        <Button
+            <EditText
+                android:id="@+id/manual_input_layout_enter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:maxLength="10000000"
+                android:inputType="number"
+                android:hint="@string/manual_input"/>
+
+            <Button
+                android:id="@+id/manual_input_layout_enter2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="@string/add"/>
+
+            <Button
+                android:id="@+id/foto_input_layout_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="@string/foto_input"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/view_parameters"
-            android:text="@string/array_5"
-            android:onClick="onClick" />
+            android:layout_below="@+id/layout_2"
+            android:orientation="vertical">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/edit_parameters"
-            android:text="@string/array_6"
-            android:onClick="onClick" />
+            <Button
+                android:id="@+id/view_parts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="@string/array_3"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/change_alert"
-            android:text="@string/change_alert"
-            android:onClick="onClick" />
+            <Button
+                android:id="@+id/edit_parts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="@string/array_4"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/enter_configuration"
-            android:text="@string/enter_configuration"
-            android:onClick="onClick" />
+            <Button
+                android:id="@+id/view_parameters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="@string/array_5"/>
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/edit_parameters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="@string/array_6"/>
 
-</RelativeLayout>
+            <Button
+                android:id="@+id/change_alert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="@string/change_alert"/>
+
+            <Button
+                android:id="@+id/enter_configuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="@string/enter_configuration"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </ScrollView>

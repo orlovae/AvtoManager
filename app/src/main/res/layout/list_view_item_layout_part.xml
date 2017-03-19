@@ -13,25 +13,25 @@
     <TextView
         android:id="@+id/text_view_name_part"
         app:layout_columnSpan="6"
-        app:layout_gravity="center_horizontal" />
+        app:layout_gravity="center_horizontal"/>
 
     <TextView
         android:id="@+id/text_view_exist"
-        android:text="@string/exist"
         app:layout_columnSpan="2"
-        app:layout_gravity="center_horizontal" />
+        app:layout_gravity="center_horizontal"
+        android:text="@string/exist"/>
 
     <TextView
         android:id="@+id/text_view_autodoc"
-        android:text="@string/autodoc"
         app:layout_columnSpan="2"
-        app:layout_gravity="center_horizontal" />
+        app:layout_gravity="center_horizontal"
+        android:text="@string/autodoc"/>
 
     <TextView
         android:id="@+id/text_view_emex"
-        android:text="@string/emex"
         app:layout_columnSpan="2"
-        app:layout_gravity="center_horizontal"/>
+        app:layout_gravity="center_horizontal"
+        android:text="@string/emex"/>
 
     <TextView
         android:id="@+id/text_view_exist_price"
@@ -43,27 +43,26 @@
         android:id="@+id/text_view_autodoc_price"
         app:layout_columnSpan="2"
         app:layout_columnWeight="1"
-        app:layout_gravity="center_horizontal" />
+        app:layout_gravity="center_horizontal"/>
 
     <TextView
         android:id="@+id/text_view_emex_price"
         app:layout_columnSpan="2"
         app:layout_columnWeight="1"
-        app:layout_gravity="center_horizontal" />
+        app:layout_gravity="center_horizontal"/>
 
     <Button
         android:id="@+id/edit"
-        android:text="@string/edit"
         app:layout_columnSpan="3"
         app:layout_columnWeight="1"
-        app:layout_gravity="center_horizontal"/>
+        app:layout_gravity="center_horizontal"
+        android:text="@string/edit"/>
 
     <Button
         android:id="@+id/delete"
-        android:text="@string/delete"
         app:layout_columnSpan="3"
-
-        app:layout_gravity="center_horizontal"/>
+        app:layout_gravity="center_horizontal"
+        android:text="@string/delete"/>
 
     <!--TODO Подсветка цен - самое дорогое красный, среднее - жёлтое, самое дешёвое зелёный-->
 
